@@ -19,8 +19,7 @@ COPY ./install-composer.sh ./
 COPY ./php.ini /usr/local/etc/php/
 
 #cleanup packages and install composer
-RUN apt-get purge -y g++ && apt-get autoremove -y && rm -r /var/lib/apt/lists/* \
-    && rm -rf /tmp/* && sh ./install-composer.sh && rm ./install-composer.sh
+#RUN apt-get purge -y g++ && apt autoremove -y && rm -r /var/lib/apt/lists/* && rm -rf /tmp/* && sh ./install-composer.sh && rm ./install-composer.sh
 
 #change current working directory
 WORKDIR /var/www
