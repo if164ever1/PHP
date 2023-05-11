@@ -15,17 +15,18 @@ Go to the project directory
 ~~~
 Install dependencies
 
-~~~bash  
-    docker build -t php-crm ./docker
+~~~bash
+~~~ go to docker folder
+    docker-compose up
     docker image ls
-    docker run -d -p 80:80 php-crm
+    docker-compose down
     
 ~~~
 
 Start the server  
 
 ~~~bash  
-npm run start
+
 ~~~
 
 ## Contributing  
@@ -34,8 +35,4 @@ Contributions are always welcome!
 
 See `contributing.md` for ways to get started.  
 
-Please adhere to this project's `code of conduct`.  
-
 ## License  
-
-[MIT](https://choosealicense.com/licenses/mit/)
