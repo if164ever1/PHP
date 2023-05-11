@@ -18,6 +18,7 @@ Install dependencies
 ~~~bash  
     docker build -t php-crm ./docker
     docker image ls
+    docker run -d -p 80:80 php-crm
     
 ~~~
 
