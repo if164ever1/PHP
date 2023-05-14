@@ -11,8 +11,8 @@ services:
     image: mysql:latest
     environment:
       - MYSQL_DATABASE=php_crm
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=
+      - MYSQL_USER=php_crm
+      - MYSQL_PASSWORD=password
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
     volumes:
       - ".././db:/docker-entrypoint-initdb.d"

@@ -5,7 +5,10 @@
     require_once 'app/database.php';
     
     require_once 'app/models/User.php';
-    
+
     require_once 'app/controllers/users/UsersController.php';
     require_once 'app/controllers/users/AuthController.php';
     
+
+    $router = new Router();
+    $router->Run();
