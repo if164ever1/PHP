@@ -6,4 +6,6 @@ CREATE TABLE IF NOT EXISTS `users`
     `is_admin` tinyint(1) DEFAULT '0',
     `create_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `users` (`id`, `login`, `password`, `is_admin`, `create_at`) VALUES ('1', 'wqww', 'qwwq', '0', CURRENT_TIMESTAMP);
